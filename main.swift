@@ -105,4 +105,11 @@ switch "junHyeong" {
   default:
     print("default")
 }
+////////////////////////////////////
+var intArr = [1,2,3,4,5]
+var myDictionary = ["first" : 1, "second" : 2]
+
+for item in myDictionary {
+    print(item)
+}
 
