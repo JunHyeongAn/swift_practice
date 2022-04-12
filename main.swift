@@ -21,3 +21,21 @@ var someString = "Hello, world"
 someString = "안녕하세요"
 
 print(someString)
+
+/////////////////////////////
+// var integers: Array<Int> = [Int]()
+var integers : [Int] = [Int]()
+integers.append(1)
+integers.append(2)
+
+print(integers)
+
+var dictionary: [String : Any] = [String : Any]()
+dictionary["firstKey"] = "firstValue"
+dictionary["secondKey"] = "secondValue"
+print(dictionary)
+
+var mySet: Set<Int> = Set<Int>()
+mySet.insert(1)
+mySet.insert(5)
+print(mySet)
