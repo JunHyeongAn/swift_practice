@@ -113,3 +113,10 @@ for item in myDictionary {
     print(item)
 }
 
+///////////////////////////////
+let param: String? = "hana"
+print(param!)
+if let name = param {
+    print(name)
+}
+
