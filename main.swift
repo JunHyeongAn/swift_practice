@@ -76,3 +76,33 @@ func runAnother(function: (String, String) -> Void) -> Void {
 }
 
 runAnother(function: greeting(friend:me:))
+
+////////////////////////////////////
+var someInteger: Int = 10
+
+if someInteger < 100 {
+    print("100미만")
+}
+
+
+/* 명확히 모든 경우의 수가 명시된 것이 아니라면 default는 꼭 작성해줘야한다.
+자동으로 break가 들어간다.
+*/
+switch someInteger {
+case 1..<100:
+    print("1~99")
+default:
+    fatalError("Unsupported")
+}
+
+switch "junHyeong" {
+  case "junHyeong", "good":
+    print("right")
+    // fallthrough는 break를 만나기전 case까지 영향을 미친다.
+    // fallthrough
+  case "miyoung":
+    print("nope")
+  default:
+    print("default")
+}
+
