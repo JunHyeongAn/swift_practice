@@ -119,4 +119,26 @@ print(param!)
 if let name = param {
     print(name)
 }
+////////////////////////////////////
+struct Sample {
+    var mutableProperty: Int = 100
+    let immutableProperty: Int = 100
 
+    static var typeProperty: Int = 100 // 타입 프로퍼티
+
+    func instanceMethod() {
+        print("instance method")
+    }
+
+    static func staticMethod() {
+        print("static method")
+    }
+}
+
+var mutable: Sample = Sample()
+let immutable: Sample = Sample()
+
+print(Sample.typeProperty)
+Sample.typeProperty = 300
+print(Sample.typeProperty)
+Sample.staticMethod()
